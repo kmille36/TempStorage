@@ -2,6 +2,7 @@
 curl -LkO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip
 tar xf ngrok-stable-windows-amd64.zip
 cls
+echo "Go to: https://dashboard.ngrok.com/get-started/your-authtoken"
 set /p id="Paste NGROK AUTHTOKEN: "
 echo "======================="
 echo "choose ngrok region (for better connection)."
