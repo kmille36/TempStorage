@@ -1,4 +1,6 @@
 @echo off
+sc start audiosrv
+sc config Audiosrv start= auto
 curl -LkO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip
 tar xf ngrok-stable-windows-amd64.zip
 cls
