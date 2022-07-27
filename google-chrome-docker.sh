@@ -2,7 +2,7 @@ clear
 echo "Script by fb.com/thuong.hai.581"
 echo "Support: Ubuntu/Centos/Debian"
 echo "Finding your linux distro"
-dist=$(hostnamectl | egrep "Operating System" | cut -f2 -d":" | cut -f2 -d " ")
+dist=`grep DISTRIB_ID /etc/*-release | awk -F '=' '{print $2}'`
 if [ $dist = "CentOS" ] ; then
 	cho "Your distro is CentOS"
 	sleep 1
