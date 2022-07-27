@@ -4,7 +4,7 @@ echo "Support: Ubuntu/Centos/Debian"
 echo "Finding your linux distro"
 dist=`grep ID /etc/*-release | awk -F '=' '{print $2}'`
 if [ $dist = "centos" ] ; then
-	cho "Your distro is CentOS"
+	echo "Your distro is CentOS"
 	sleep 1
         echo "Updating your system"
         sudo yum update -y
