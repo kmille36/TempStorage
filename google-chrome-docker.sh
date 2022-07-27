@@ -2,8 +2,8 @@ clear
 echo "Script by fb.com/thuong.hai.581"
 echo "Support: Ubuntu/Centos/Debian"
 echo "Finding your linux distro"
-dist=`grep DISTRIB_ID /etc/*-release | awk -F '=' '{print $2}'`
-if [ $dist = "CentOS" ] ; then
+dist=`grep ID /etc/*-release | awk -F '=' '{print $2}'`
+if [ $dist = "centos" ] ; then
 	cho "Your distro is CentOS"
 	sleep 1
         echo "Updating your system"
@@ -14,7 +14,7 @@ if [ $dist = "CentOS" ] ; then
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
         sudo yum install -y ./https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
-elif [ $dist = "Ubuntu" -o $dist = "Debian" ] ; then
+elif [ $dist = "ubuntu" -o $dist = "debian" ] ; then
       	echo "Your distro is Ubuntu"
       	sleep 1
         echo "Updating your system"
