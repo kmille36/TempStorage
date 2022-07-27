@@ -23,7 +23,7 @@ elif command -v yum >/dev/null; then
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
         sudo yum install -y ./https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 else
-  echo "Not Supported OS !!!"
+  echo "Not Supported OS/Distro !!!"
 fi
 echo "Lauching Google-Chrome"
 google-chrome --no-sandbox
