@@ -10,17 +10,17 @@ if command -v apt-get >/dev/null; then
         sudo apt-get install wget -y
         clear
         echo "Installing google-chrome"
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo apt install -y ./google-chrome-stable_current_amd64.deb
 elif command -v yum >/dev/null; then
   	echo "Your distro is CentOS"
 	sleep 1
         echo "Updating your system"
         sudo yum update -y
-        yum install wget -y
+        sudo yum install wget -y
         clear
         echo "Installing google-chrome"
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+        sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
         sudo yum install -y ./google-chrome-stable_current_x86_64.rpm
 else
   echo "Not Supported OS/Distro !!!"
