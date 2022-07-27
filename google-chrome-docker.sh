@@ -14,7 +14,7 @@ if [ $dist = "centos" ] ; then
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
         sudo yum install -y ./https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 
-elif [ $dist = "ubuntu" -o $dist = "debian" ] ; then
+elif [ $dist = "Ubuntu" -o $dist = "debian" ] ; then
       	echo "Your distro is Ubuntu"
       	sleep 1
         echo "Updating your system"
