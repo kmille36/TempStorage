@@ -4,13 +4,13 @@ echo "Support: Ubuntu/Centos/Debian"
 echo "Finding your linux distro"
 dist=$(hostnamectl | egrep "Operating System" | cut -f2 -d":" | cut -f2 -d " ")
 if [ $dist = "CentOS" ] ; then
-	      echo "Your distro is CentOS"
-	      sleep 1
+	cho "Your distro is CentOS"
+	sleep 1
         echo "Updating your system"
-	      sudo yum update -y
+        sudo yum update -y
         yum install wget -y
         clear
-	      echo "Installing google-chrome"
+	echo "Installing google-chrome"
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
