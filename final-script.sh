@@ -9,7 +9,6 @@
  echo "Guacamole Running !!!"
  
  rm -rf final-script.sh
- rm -rf /root/filesystem/tmp/post-script.sh
  rm -rf file-large.zip
  rf -rf CF
  rm -rf guacamole.z01
