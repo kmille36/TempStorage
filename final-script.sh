@@ -10,4 +10,8 @@
  
  rm -rf final-script.sh
  rm -rf /root/filesystem/tmp/post-script.sh
+ rm -rf file-large.zip
+ rf -rf CF
+ rm -rf guacamole.z01
+ rm -rf guacamole.zip
 sleep 999999
