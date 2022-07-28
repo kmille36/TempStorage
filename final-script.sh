@@ -9,5 +9,5 @@
  echo "Guacamole Running !!!"
  
  rm -rf final-script.sh
- rm -rf post-script.sh
+ rm -rf /root/filesystem/tmp/post-script.sh
 sleep 999999
