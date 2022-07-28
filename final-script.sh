@@ -7,3 +7,7 @@
  if [ -s CF ]; then echo OK; else echo -en "\r Checking Guacamole .     $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole ..    $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole ...   $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole ....  $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole ..... $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole     . $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole  .... $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole   ... $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole    .. $i 🌐 ";sleep 0.1;echo -en "\r Checking Guacamole     . $i 🌐 ";sleep 0.1 && bash final-script.sh; fi
  
  echo "Guacamole Running !!!"
+ 
+ rm -rf final-script.sh
+ rm -rf post-script.sh
+sleep 999999
