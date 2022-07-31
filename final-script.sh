@@ -16,4 +16,5 @@
  
  echo "Creating 1GB SWAP file..."
  ssh -t root@node01 "sudo fallocate -l 1G /swapfile ; sudo chmod 600 /swapfile ; sudo mkswap /swapfile ; sudo swapon /swapfile"
+ echo "SWAP file created !!!"
 sleep 999999
