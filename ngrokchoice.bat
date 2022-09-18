@@ -1,6 +1,7 @@
 @echo off
 sc start audiosrv
 sc config Audiosrv start= auto
+reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v fDenyTSConnections /t REG_DWORD /d 0 /f
 curl -LkO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip
 tar xf ngrok-stable-windows-amd64.zip
 cls
