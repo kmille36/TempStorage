@@ -17,5 +17,5 @@ echo "--------------------------------------------------------"
 echo -e "${RED}Ubuntu 22.04 NoVNC${NC} READY. Password is ${RED}$passwd${NC} . Go to: ${RED}http:///$ip:$number${NC}"
 echo "-------------------------------------------------------------------------------"
 
-timeout 3600 docker run --privileged --shm-size 1g -p $number:10000 -e VNC_PASSWD=$passwd -e PORT=10000 -e AUDIO_PORT=1699 -e WEBSOCKIFY_PORT=6900 -e VNC_PORT=5900 -e SCREEN_WIDTH=1024 -e SCREEN_HEIGHT=768 -e SCREEN_DEPTH=24 thuonghai2711/ubuntu-novnc-pulseaudio:22.04
+timeout 3600 docker run --rm --privileged --shm-size 1g -p $number:10000 -e VNC_PASSWD=$passwd -e PORT=10000 -e AUDIO_PORT=1699 -e WEBSOCKIFY_PORT=6900 -e VNC_PORT=5900 -e SCREEN_WIDTH=1024 -e SCREEN_HEIGHT=768 -e SCREEN_DEPTH=24 thuonghai2711/ubuntu-novnc-pulseaudio:22.04
 
