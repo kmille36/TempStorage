@@ -11,5 +11,8 @@ sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils vi
    cd android-studio/bin
    sudo adduser ubuntu kvm
    sudo chown -R ubuntu:ubuntu /dev/kvm
+   
+
+   code
    ./studio.sh
         
