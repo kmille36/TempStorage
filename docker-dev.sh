@@ -1,5 +1,5 @@
 sudo apt update 
-sudo apt install sudo git python python3 neofetch -y
+sudo apt install sudo git npm python python3 neofetch -y
 sudo apt install -y qemu qemu-kvm libvirt-daemon libvirt-clients bridge-utils virt-manager
         sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
         sudo wget -O code.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
