@@ -34,8 +34,8 @@ gcloud compute instances create instance-1 \
   --labels=goog-ec-src=vm_add-gcloud \
   --reservation-affinity=any
 
-echo "Waitting 90s before password"
-sleep 90
+echo "Waitting 100s before password"
+sleep 101
 
 echo y | gcloud beta compute reset-windows-password "instance-1" \
   --project "$project_id" \
