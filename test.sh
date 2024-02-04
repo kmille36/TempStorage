@@ -26,4 +26,4 @@ selkies-gstreamer-resize 1280x720
 # Choose your video encoder, change to x264enc for software encoding or other encoders for different hardware
 # Do not set enable_resize to true if there is a physical display
 # Starts the remote desktop process
-selkies-gstreamer --addr=0.0.0.0 --port=8081 --enable_https=false --https_cert=/etc/ssl/certs/ssl-cert-snakeoil.pem --https_key=/etc/ssl/private/ssl-cert-snakeoil.key --basic_auth_user=user --basic_auth_password=password --encoder=nvh264enc --enable_resize=false &
+selkies-gstreamer --addr=0.0.0.0 --port=8081 --enable_https=false --https_cert=/etc/ssl/certs/ssl-cert-snakeoil.pem --https_key=/etc/ssl/private/ssl-cert-snakeoil.key --basic_auth_user=user --basic_auth_password=password --encoder=vp8enc --enable_resize=false &
